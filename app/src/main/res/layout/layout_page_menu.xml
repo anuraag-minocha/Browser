@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mScreenshotMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_screenshot"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mShareUrlMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_share_url"
+        android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/mDesktopSwitch"
+        style="@style/MenuOptionItemStyle"
+        android:paddingEnd="8dp"
+        android:text="@string/page_menu_desktop_mode"
+        android:textOff="@null"
+        android:textOn="@null" />
+
+    <Switch
+        android:id="@+id/mCustomUASwitch"
+        style="@style/MenuOptionItemStyle"
+        android:paddingEnd="8dp"
+        android:text="@string/page_menu_custom_ua"
+        android:textOff="@null"
+        android:textOn="@null"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/mNewTabMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_new_tab" />
+
+    <TextView
+        android:id="@+id/mNewPrivateTabMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_private" />
+
+    <TextView
+        android:id="@+id/mPin2HomeMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_pin_to_homepage"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mAdd2LauncherMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_add_to_launcher"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/mSettingsMenu"
+        style="@style/MenuOptionItemStyle"
+        android:text="@string/page_menu_settings" />
+
+</LinearLayout>

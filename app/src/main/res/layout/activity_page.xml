@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Content -->
+    <include layout="@layout/content_main" />
+
+    <!--Full Screen Mask Layout, It's below BottomSheet layout but above Main Content-->
+    <View
+        android:id="@+id/mMaskView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:background="@color/black" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kotlin.browser.PageActivity">
+
+        <!-- Bottom Sheet Content -->
+        <include layout="@layout/content_bottom_sheet" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--自定义布局，用于网页呈现特殊布局，比如全屏观看视频-->
+    <FrameLayout
+        android:id="@+id/mCustomViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone" />
+
+    <!-- Full Screen Loading Layout-->
+    <ViewStub
+        android:id="@+id/mLoadingStub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/mLoadingStubLayout"
+        android:layout="@layout/layout_loading" />
+</merge>

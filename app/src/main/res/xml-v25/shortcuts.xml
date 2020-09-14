@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_new_tab"
+        android:shortcutId="shortcut_new_tab"
+        android:shortcutLongLabel="@string/label_shortcut_new_tab_long"
+        android:shortcutShortLabel="@string/label_shortcut_new_tab_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="browser://new_tab/"
+            android:targetClass="com.kotlin.browser.RouteActivity"
+            android:targetPackage="com.kotlin.browser" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_private"
+        android:shortcutId="shortcut_private"
+        android:shortcutLongLabel="@string/label_shortcut_private_long"
+        android:shortcutShortLabel="@string/label_shortcut_private_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="browser://private/"
+            android:targetClass="com.kotlin.browser.RouteActivity"
+            android:targetPackage="com.kotlin.browser" />
+    </shortcut>
+</shortcuts>

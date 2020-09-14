@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainActivityTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
+    <style name="PageActivityTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorHighlight">@color/text_highlight</item>
+        <!--<item name="android:toolbarStyle">@style/PageActivityTheme.ToolbarStyle</item>-->
+    </style>
+
+    <style name="PageActivityTheme.ToolbarStyle">
+        <item name="android:paddingEnd">-2dp</item>
+    </style>
+
+    <style name="SettingsActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

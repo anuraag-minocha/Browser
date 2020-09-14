@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory android:title="@string/preference_category_browser">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/preference_entries_search_engine_id"
+            android:entryValues="@array/preference_entry_values_search_engine_id"
+            android:key="@string/preference_key_search_engine_id"
+            android:title="@string/preference_title_search_engine_id"
+            tools:summary="Google" />
+
+        <Preference
+            android:key="@string/preference_key_clear_history"
+            android:title="@string/preference_title_clear_history" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preference_category_function">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/preference_key_show_soft_keyboard"
+            android:summary="@string/preference_summary_show_soft_keyboard"
+            android:title="@string/preference_title_show_soft_keyboard" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

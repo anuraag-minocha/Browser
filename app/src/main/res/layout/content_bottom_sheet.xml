@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/action_bar_size_48"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".PageActivity"
+    tools:showIn="@layout/activity_page">
+
+    <ProgressBar
+        android:id="@+id/mProgress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:maxHeight="2dp"
+        android:progressDrawable="@drawable/page_progress_layer_list"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_size_48"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="@dimen/action_bar_size_48"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <EditText
+            android:id="@+id/mInputBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ellipsize="none"
+            android:hint="@string/hint_input_normal"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:selectAllOnFocus="true"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.kotlin.browser.widget.MenuOptionLayout
+        android:id="@+id/mMenuOptionWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_page_menu" />
+
+    </com.kotlin.browser.widget.MenuOptionLayout>
+</RelativeLayout>
